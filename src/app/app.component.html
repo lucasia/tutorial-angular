@@ -375,12 +375,8 @@
       Welcome {{title}}!
     </h1>
     <div class="container">
-      // tslint:disable-next-line:ban-types
-      <p>Id: <span>{{data}}</span></p>
-<!--
-      <p>Id: <span>{{data.id}}</span></p>
-      <p>Message: <span>{{data.content}}</span></p>
--->
+      <p>Id: <span>{{greeting['id']}}</span></p>
+      <p>Message: <span>{{greeting['content']}}</span></p>
     </div>
   </div>
 

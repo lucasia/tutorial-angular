@@ -7,20 +7,11 @@ import {HttpClient} from '@angular/common/http';
   styleUrls: ['./app.component.css']
 })
 
-/*
-interface data {
-  id:string,
-  content:string;
-}
-*/
-
 export class AppComponent {
   title = 'Lucasia Tutorial';
-  // tslint:disable-next-line:ban-types
-  data: Object = {
-    id: undefined
-  };
+  greeting = {};
   constructor(private http: HttpClient) {
-    http.get('resource').subscribe(data => this.data = data);
+    // http.get('resource').subscribe(data => this.greeting = data);
+    http.get('resource').subscribe(data => this.greeting = data);
   }
 }
